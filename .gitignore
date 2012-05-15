@@ -1,6 +1,12 @@
-*.class
+# Maven files
+target
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# IntelliJ files
+.idea
+*.iml
+
+# Runtime files
+transaction.log
+
+# OS X folder attributes
+.DS_Store
