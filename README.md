@@ -46,7 +46,7 @@ Le minimum pour mettre en oeuvre un EJB :
 
 Il n'y a pas encore de JMS / MDB, de persistance ou d'application web.
 
-En dehors des 4 fichiers `pom.xml` (le racine, et celui de chacun des 3 modules EJB, EAR et client), ce projet contient 3 classes Java et 1 fichier de configuration.
+En dehors des 4 fichiers `pom.xml` (le racine, et celui de chacun des 3 modules EJB, EAR et client), ce projet contient 3 classes Java et 1 fichier de configuration. Et l'EAR fait 5 ko.
 
 
 ### Exécution
