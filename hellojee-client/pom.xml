@@ -5,14 +5,14 @@
     <parent>
         <groupId>me.couvreur.java.hellojee</groupId>
         <artifactId>HelloJee</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>hellojee-client</artifactId>
     <name>hellojee-client</name>
     <packaging>jar</packaging>
     <!--http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide-->
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
 
     <!-- http://repo.maven.apache.org/maven2/org/jboss/jbossas/jboss-as-client/ -->
     <dependencies>
