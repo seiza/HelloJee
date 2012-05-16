@@ -4,7 +4,7 @@
 
     <groupId>me.couvreur.java.hellojee</groupId>
     <artifactId>hellojee</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>HelloJee</name>

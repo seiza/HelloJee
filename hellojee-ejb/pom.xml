@@ -5,13 +5,13 @@
     <parent>
         <groupId>me.couvreur.java.hellojee</groupId>
         <artifactId>hellojee</artifactId>
-	    <version>1.0.1</version>
+	    <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>hellojee-ejb</artifactId>
     <name>hellojee-ejb</name>
     <packaging>ejb</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
