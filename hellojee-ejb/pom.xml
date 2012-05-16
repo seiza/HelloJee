@@ -4,14 +4,14 @@
 
     <parent>
         <groupId>me.couvreur.java.hellojee</groupId>
-        <artifactId>HelloJee</artifactId>
-        <version>0.1.1-SNAPSHOT</version>
+        <artifactId>hellojee</artifactId>
+	    <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>hellojee-ejb</artifactId>
     <name>hellojee-ejb</name>
     <packaging>ejb</packaging>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
@@ -37,6 +37,11 @@
                 <version>2.3</version>
                 <configuration>
                     <ejbVersion>3.0</ejbVersion>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>

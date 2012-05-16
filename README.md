@@ -29,7 +29,26 @@ Pour créer une nouvelle version : `mvn release:prepare`
 
 Versions (tags GitHub) :
 
-* `HelloJee-0.1` : Projet JEE minimaliste avec uniquement un EJB Stateless et un appel depuis une classe Java simple.
+* `hellojee-0.1` : Projet JEE minimaliste avec uniquement un EJB Stateless et un appel depuis une classe Java simple.
+* `hellojee-0.2` : Ajout d'un Message Driven Bean.
+
+
+# Version 0.1 : EJB 3 Session Stateless
+
+## Version 0.1.1 
+
+### Contenu
+
+Le minimum pour mettre en oeuvre un EJB :
+
+* Un EJB session stateless (qui prend un paramètre String retourne une String concaténée)
+* Un EAR encapsulant l'EJB à des fins de déploiement
+* Un client qui se contente d'appeler l'EJB, de l'appeler et d'écrire le résultat sur la console (aucune autre technologie)
+
+Il n'y a pas encore de JMS / MDB, de persistance ou d'application web.
+
+En dehors des 4 fichiers `pom.xml` (le racine, et celui de chacun des 3 modules EJB, EAR et client), ce projet contient 3 classes Java et 1 fichier de configuration. Et l'EAR fait 5 ko.
+
 
 
 # Version 0.1 : EJB 3 Session Stateless
@@ -57,6 +76,42 @@ En dehors des 4 fichiers `pom.xml` (le racine, et celui de chacun des 3 modules 
 Attention :
 
 * Il va peut être falloir changer le port JNDI dans le fichier `jeetuto-swing/src/main/resources/jndi.properties` pour que cela fonctionne.
+
+
+
+# Version 0.2 : Message Driven Bean (MDB / JMS)
+
+## Version 0.2.0 
+
+### Contenu
+
+Ajout d'un Message Driven Bean (MDB / JMS) :
+
+* Dans le package `me.couvreur.java.jeetuto.ejb.mdb`.
+* Le Message Producer et le MDB fonctionnent avec une Queue.
+* Mais impossible de faire fonctionner le Messager/Queue Receiver ;(
+* Mise en place de la livraison via Maven : `mvn mvn release:prepare` et 3 fois 'return' (utiliser les 3 propositions par défaut)
+
+
+### Remarques
+
+* Attention, dans JBoss, toutes les destinations de type Queue doivent commencer par `queue/` (voir l'annotation `@MessageDriven/@ActivationConfigProperty` dans la classe `me.couvreur.java.jeetuto.ejb.mdb.HelloMessageListenerMDB`)
+* Attention, dans JBoss, la déclaration des queues se fait dans un fichier `hornetq-jms.xml` (et non pas `jms.xml`) dans le répertoire ressource `META-INF` du module `jeetuto-ejb`
+* Pour la mise à jour du numéro de version, la prochaine fois utiliser `mvn release:update-versions -DautoVersionSubmodules=true` lorsqu'une version est finie (le faire en fin de version 0.2 -> 0.3)
+
+
+### Exécution
+
+* Exécuter `mvn clean package` dans un terminal (l'EAR est copié dans le répertoire `/usr/local/jboss-6.1.0.Final/server/default/deploy/`)
+* Dans IntelliJ exécuter la classe client `me.couvreur.java.hellojee.client.mdb.ClientHelloJMSProducer` du module `jeetuto-client` : vous devriez voir une trace intéressante dans les logs du serveur ;)
+
+En dehors des 4 fichiers pom.xml (le racine, et celui de chacun des 3 modules EJB, EAR et client), ce projet contient 4 classes Java et 2 fichier de configuration. Et l'EAR fait 5 ko.
+
+
+Attention :
+
+* Il va peut être falloir changer le port JNDI dans le fichier `jeetuto-swing/src/main/resources/jndi.properties` pour que cela fonctionne.
+
 
 
 
@@ -193,4 +248,3 @@ Alors il faut ajouter la librairie `jbossall-client.jar` (qui se trouve dans `JB
 
 * http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide
 * http://www.sonatype.com/books/mvnref-book/reference/resource-filtering-sect-properties.html
-

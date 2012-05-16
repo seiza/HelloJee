@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.couvreur.java.hellojee</groupId>
-    <artifactId>HelloJee</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <artifactId>hellojee</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
-    <name>Hello Jee</name>
+    <name>HelloJee</name>
     <url>http://hellojee.io</url>
 
     <modules>
@@ -27,8 +27,9 @@
         <developerConnection>scm:git:git@github.com:seiza/HelloJee.git</developerConnection>
     </scm>
 
-    <!--repo.maven.apache.org/maven2/-->
+	<!--repo.maven.apache.org/maven2/-->
     <!--http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide-->
+    <!-- http://repo.maven.apache.org/maven2/org/jboss/jbossas/jboss-as-client/ -->
 
     <dependencies>
         <dependency>
