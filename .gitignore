@@ -1,5 +1,6 @@
 # Maven files
 target
+*.releaseBackup
 
 # IntelliJ files
 .idea
