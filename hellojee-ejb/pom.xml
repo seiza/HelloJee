@@ -5,15 +5,20 @@
     <parent>
         <groupId>me.couvreur.java.hellojee</groupId>
         <artifactId>hellojee</artifactId>
-	    <version>1.0.2-SNAPSHOT</version>
+	    <version>1.0.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>hellojee-ejb</artifactId>
     <name>hellojee-ejb</name>
     <packaging>ejb</packaging>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <dependencies>
+        <dependency>
+            <groupId>me.couvreur.java.hellojee</groupId>
+            <artifactId>hellojee-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>javaee</groupId>
             <artifactId>javaee-api</artifactId>
