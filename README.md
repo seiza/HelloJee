@@ -27,16 +27,23 @@ Pour créer une nouvelle version (après avoir fait un commit des sources) : `mv
 
 # Versions
 
-Versions (tags GitHub) :
+* [0.1 : EJB 3 Session Stateless](https://github.com/seiza/HelloJee#version-01--ejb-3-session-stateless) : : Projet JEE minimaliste avec uniquement un EJB Stateless et un appel depuis une classe Java simple.
+* [0.2 : EJB 3 MDB / JMS)](https://github.com/seiza/HelloJee#version-02--message-driven-bean-mdb--jms) : Ajout d'un Message Driven Bean
+* [0.3 : EJB 3 JPA / Hibernate](https://github.com/seiza/HelloJee#version-03--ejb-3---jpa-avec-hibernate) : Ajout de la persistance avec EJB 3 - JPA - Hibernate
 
-* `hellojee-0.1` : Projet JEE minimaliste avec uniquement un EJB Stateless et un appel depuis une classe Java simple.
-* `hellojee-0.2` : Ajout d'un Message Driven Bean.
-* `HelloJee-0.3` : Ajout de la persistance avec EJB 3 - JPA - Hibernate
 
 
 # Version 0.1 : EJB 3 Session Stateless
 
-## Version 0.1.1 
+* Voir sur Github :
+    * La branche [1-ejb3-stateless](https://github.com/seiza/HelloJee/tree/1-ejb3-stateless) pour voir que les sources de cette partie.
+    * Le tag [HelloJee-0.1.0](https://github.com/seiza/HelloJee/zipball/HelloJee-0.1.0) pour ne télécharger que les sources de cette partie
+
+
+## Version 0.1.0
+
+* Voir le tag [HelloJee-0.1.0](https://github.com/seiza/HelloJee/zipball/HelloJee-0.1.0) pour ne télécharger que les sources de cette partie
+
 
 ### Contenu
 
@@ -63,7 +70,15 @@ Attention :
 
 # Version 0.2 : Message Driven Bean (MDB / JMS)
 
+* Voir sur Github :
+    * La branche [2-ejb3-mdb-jms](https://github.com/seiza/HelloJee/tree/2-ejb3-mdb-jms) pour voir que les sources de cette partie.
+    * Le tag [hellojee-0.2.0](https://github.com/seiza/HelloJee/zipball/hellojee-0.2.0) pour ne télécharger que les sources de cette partie
+
+
 ## Version 0.2.0 
+
+* Voir le tag [hellojee-0.2.0](https://github.com/seiza/HelloJee/zipball/hellojee-0.2.0) pour ne télécharger que les sources de cette partie
+
 
 ### Contenu
 
@@ -95,7 +110,15 @@ Attention :
 
 # Version 0.3 : EJB 3 - JPA (avec Hibernate)
 
+* Voir sur Github :
+    * La branche [3-ejb3-entity-jpa](https://github.com/seiza/HelloJee/tree/3-ejb3-entity-jpa) pour voir que les sources de cette partie.
+    * Le tag [hellojee-0.3.0](https://github.com/seiza/HelloJee/zipball/hellojee-0.3.0) pour ne télécharger que les sources de cette partie
+
+
 ## Release 0.3.0
+
+* Le tag [hellojee-0.3.0](https://github.com/seiza/HelloJee/zipball/hellojee-0.3.0) pour ne télécharger que les sources de cette partie
+
 
 ### Contenu
 
