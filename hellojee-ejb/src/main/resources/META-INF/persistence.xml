@@ -12,10 +12,10 @@ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
         <!-- The provider only needs to be set if you use several JPA providers -->
         <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>-->
 
-        <jar-file>hellojee-model-${project.version}.jar</jar-file>
+        <!--<jar-file>hellojee-model-${project.version}.jar</jar-file>-->
 
-        <!--<class>me.couvreur.java.hellojeee.ejb.entity.model.Person</class>-->
-        <!--<class>me.couvreur.java.hellojeee.ejb.entity.model.Address</class>-->
+        <class>me.couvreur.java.hellojee.ejb.entity.model.Person</class>
+        <class>me.couvreur.java.hellojee.ejb.entity.model.Address</class>
 
         <!--<properties>-->
             <!--<property name="hibernate.show_sql" value="true"/>-->

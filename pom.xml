@@ -4,24 +4,14 @@
 
     <groupId>me.couvreur.java.hellojee</groupId>
     <artifactId>hellojee</artifactId>
-<<<<<<< HEAD
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>HelloJee</name>
     <url>http://hellojee.io</url>
 
     <modules>
-=======
-    <version>0.3.1-SNAPSHOT</version>
-
-    <packaging>pom</packaging>
-    <name>HelloJee</name>
-    <url>https://github.com/seiza/HelloJee</url>
-
-    <modules>
         <module>hellojee-model</module>
->>>>>>> 3-ejb3-entity-jpa
         <module>hellojee-ejb</module>
         <module>hellojee-ear</module>
         <module>hellojee-client</module>
@@ -38,15 +28,9 @@
         <developerConnection>scm:git:git@github.com:seiza/HelloJee.git</developerConnection>
     </scm>
 
-<<<<<<< HEAD
-	<!--repo.maven.apache.org/maven2/-->
-    <!--http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide-->
-    <!-- http://repo.maven.apache.org/maven2/org/jboss/jbossas/jboss-as-client/ -->
-=======
     <!-- http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide -->
     <!-- http://repo.maven.apache.org/maven2/org/jboss/jbossas/jboss-as-client/ -->
-    <!--repo.maven.apache.org/maven2/-->
->>>>>>> 3-ejb3-entity-jpa
+    <!-- repo.maven.apache.org/maven2/ -->
 
     <dependencies>
         <dependency>
